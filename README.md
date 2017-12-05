@@ -1,5 +1,5 @@
 # django-setka
-setka-editor integration to Django framework
+setka-editor integration for Django framework
 
 
 ...coming soon in january 2019)
