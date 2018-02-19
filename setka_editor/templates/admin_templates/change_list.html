@@ -1,0 +1,15 @@
+{% extends "admin/change_list.html" %}
+{% load staticfiles %}
+
+{% block extrastyle %}
+  {{ block.super }}
+
+  <link rel="stylesheet" href="{% static 'setka/assets/css/setka-list.css' %}">
+{% endblock %}
+
+{% block content %}
+  {{ block.super }}
+
+  <script src="{% static 'setka/assets/js/setka_requests.js'%}"></script>
+  <script src="{% static 'setka/assets/js/setkaListInit.js'%}"></script>
+{% endblock %}

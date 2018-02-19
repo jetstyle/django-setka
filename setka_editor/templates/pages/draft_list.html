@@ -1,0 +1,24 @@
+{% extends 'admin/base.html' %}
+{% load staticfiles %}
+{% block extrastyle %}
+  {{ block.super }}
+
+  <link rel="stylesheet" href="{% static 'setka/assets/css/setka-list.css' %}">
+{% endblock %}
+
+
+{% block content %}
+  <div class="draft_list">
+  {% for draft in drafts %}
+    <div class="draft_elem" data-draft-id="{{ draft.id }}">
+      <div class="draft_name">{{ draft.name }}</div>
+      <div><a class="button" href="{% url 'setka:draft-preview' draft.id %}" target="_blank">Preview</a></div>
+      <div><button class="button setkapost stkbtn" value="{% url 'setka:draft-load' draft.id %}">Load</button></div>
+      <div><button class="button setkadelete stkbtn" value="{% url 'setka:draft-delete' draft.id %}">Delete</button></div>
+    </div>
+  {% endfor %}
+  </div>
+
+  <script src="{% static 'setka/assets/js/setka_requests.js'%}"></script>
+
+{% endblock %}

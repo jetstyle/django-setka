@@ -1,0 +1,23 @@
+.preview_container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .preview_container {
+    width: 940px;
+  }
+}
+
+@media (max-width: 940px) {
+  .preview_container {
+    width: 620px;
+  }
+}
+
+@media (max-width: 620px) {
+  .preview_container {
+    width: 100%;
+    margin: 0;
+  }
+}

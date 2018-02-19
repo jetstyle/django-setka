@@ -1,0 +1,54 @@
+.button.stkbtn {
+  height: 25px;
+  vertical-align: middle;
+  padding: 2px 3px;
+  margin-right: 5px;
+}
+
+td {
+  height: 33px;
+  vertical-align: middle;
+}
+
+.field-title {
+  vertical-align: middle;
+}
+
+.draft_list {
+  display: table;
+}
+
+.draft_elem {
+  vertical-align: middle;
+  display: table-row;
+  height: 40px;
+}
+.draft_elem div {
+  vertical-align: middle;
+  display: table-cell;
+  padding: 0 10px;
+}
+.draft_elem div a {
+  padding: 2px 3px;
+  height: 25px;
+}
+
+.sync_data {
+  background-clip: border-box;
+  background-color: rgb(153, 153, 153);
+  border-radius: 15px;
+  color: white;
+  display: block;
+  float: left;
+  font-family: Roboto, 'Lucida Grande', 'DejaVu Sans';
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 3px 12px;
+  cursor: pointer;
+  border-width: 0;
+  line-height: 20px;
+}
+
+.sync_data:hover {
+  background-color: #417690;
+}
